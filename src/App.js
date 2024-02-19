@@ -21,7 +21,7 @@ function App() {
         <Route path="/cart" element={<Cart name="CART_PAGE"/>}/>
       </Routes>
     </BrowserRouter> */}
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/products' element={<Products/>} />
@@ -29,8 +29,8 @@ function App() {
       </Routes>
     </BrowserRouter>
     <State/>
-    <Lifecycle/> */}
-    {/* <Effect/> */}
+    <Lifecycle/>
+    <Effect/>
     <Reducer/>
     {/* <State/> */}
     </>
