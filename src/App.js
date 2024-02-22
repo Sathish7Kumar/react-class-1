@@ -7,11 +7,16 @@ import State from './Hooks/State';
 import Lifecycle from './pages/LifeCycle';
 import Effect from './Hooks/Effect';
 import Reducer from './Hooks/Reducer';
-
-
+import ContextHome from './Context/ContextHome';
+import Vote from './condition/Vote';
+import { useState } from 'react';
+import Login from './condition/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navs from './bcss/Navs';
 
 
 function App() {
+  
 
   return (
     <>
@@ -21,7 +26,7 @@ function App() {
         <Route path="/cart" element={<Cart name="CART_PAGE"/>}/>
       </Routes>
     </BrowserRouter> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/products' element={<Products/>} />
@@ -31,8 +36,12 @@ function App() {
     <State/>
     <Lifecycle/>
     <Effect/>
-    <Reducer/>
+    <Reducer/> */}
     {/* <State/> */}
+    {/* <ContextHome/> */}
+    {/* <Vote/> */}
+      <Navs/>
+        <Login  />
     </>
   );
 }
