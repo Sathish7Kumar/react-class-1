@@ -13,6 +13,8 @@ import { useState } from 'react';
 import Login from './condition/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navs from './bcss/Navs';
+import SignUpForm from './Form/SignUpForm';
+import NavigationBar from './Navigation/NavigationBar';
 
 
 function App() {
@@ -40,8 +42,10 @@ function App() {
     {/* <State/> */}
     {/* <ContextHome/> */}
     {/* <Vote/> */}
-      <Navs/>
-        <Login  />
+      {/* <Navs/> */}
+        {/* <Login  /> */}
+        <NavigationBar/>
+        <SignUpForm/>
     </>
   );
 }
