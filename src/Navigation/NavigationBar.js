@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import { TbLayoutNavbarFilled } from "react-icons/tb";
+import { IoLogoGoogle } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
+
   const [showNav, setshowNav] = useState(false);
+
   const toogle = () => {
-    setshowNav(!showNav);
+    setshowNav(!showNav); // true // false // true
   };
+  
   return (
     <>
       <div className="navbar">
         <div className="logo">
-          <a href="#">LOGO</a>
+          <Link to="/"> <IoLogoGoogle style={{color:"blue",fontSize:"35px"}} />MY PAGE</Link>
         </div>
         <div
           style={{ color: "red", fontSize: "35px" }}
@@ -19,15 +24,22 @@ const NavigationBar = () => {
         >
           <TbLayoutNavbarFilled />
         </div>
+        {/* <ul className="nav-link show"></ul> */}
         <ul className={`nav-links ${showNav ? "show" : ""}`}>
           <li>
-            <a href="#">Home</a>
+            <Link to="/signin">Signin Page</Link>
           </li>
           <li>
-            <a href="#">About</a>
+          <Link to="/vote">Vote Page</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+          <Link to="/state">State Page</Link>
+          </li>
+          <li>
+          <Link to="/effect">Effect Page</Link>
+          </li>
+          <li>
+          <Link to="/recap">Recap</Link>
           </li>
         </ul>
       </div>

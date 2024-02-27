@@ -71,17 +71,17 @@
   .icon{
     display: block;
     float: right;
-    margin-right: 1rem;
+    margin-right: 25px;
   }
 
   .nav-links {
     display: none;
     float: none;
-    text-align: center;
   }
 
   .nav-links.show {
     display: block;
+    text-align: center;
   }
 
   .nav-links li {

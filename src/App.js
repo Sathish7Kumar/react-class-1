@@ -11,10 +11,13 @@ import ContextHome from './Context/ContextHome';
 import Vote from './condition/Vote';
 import { useState } from 'react';
 import Login from './condition/Login';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Navs from './bcss/Navs';
 import SignUpForm from './Form/SignUpForm';
 import NavigationBar from './Navigation/NavigationBar';
+import Home2 from './Context/Home2';
+import Homepage2 from './Navigation/Homepage2';
+import Recap from './Navigation/Recap';
 
 
 function App() {
@@ -44,8 +47,19 @@ function App() {
     {/* <Vote/> */}
       {/* <Navs/> */}
         {/* <Login  /> */}
+        {/* <NavigationBar/> */}
+        {/* <SignUpForm/> */}
+      <BrowserRouter>
         <NavigationBar/>
-        <SignUpForm/>
+      <Routes>
+        <Route path='/' element={<Homepage2/>} />
+        <Route path='/signin' element={<SignUpForm/>} />
+        <Route path='/vote' element={<Vote/>} />
+        <Route path='/state' element={<State/>} />
+        <Route path='/effect' element={<Effect/>} />
+        <Route path='/recap' element={<Recap/>} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
