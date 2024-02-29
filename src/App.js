@@ -18,6 +18,8 @@ import NavigationBar from './Navigation/NavigationBar';
 import Home2 from './Context/Home2';
 import Homepage2 from './Navigation/Homepage2';
 import Recap from './Navigation/Recap';
+import Memo from './Hooks/Memo';
+import Popup from './Popup/Popup';
 
 
 function App() {
@@ -53,6 +55,8 @@ function App() {
         <NavigationBar/>
       <Routes>
         <Route path='/' element={<Homepage2/>} />
+        <Route path='/memo'element={<Memo/>} />
+        <Route path='/popup'element={<Popup/>} />
         <Route path='/signin' element={<SignUpForm/>} />
         <Route path='/vote' element={<Vote/>} />
         <Route path='/state' element={<State/>} />

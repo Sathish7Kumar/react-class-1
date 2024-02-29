@@ -30,6 +30,12 @@ const NavigationBar = () => {
             <Link to="/signin">Signin Page</Link>
           </li>
           <li>
+          <Link to="/memo">Memo Hook</Link>
+          </li>
+          <li>
+          <Link to="/popup">PopUp</Link>
+          </li>
+          <li>
           <Link to="/vote">Vote Page</Link>
           </li>
           <li>
