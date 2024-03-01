@@ -20,6 +20,8 @@ import Homepage2 from './Navigation/Homepage2';
 import Recap from './Navigation/Recap';
 import Memo from './Hooks/Memo';
 import Popup from './Popup/Popup';
+import Callback from './callback/Callback';
+import Ref from './Ref/Ref';
 
 
 function App() {
@@ -59,6 +61,8 @@ function App() {
         <Route path='/popup'element={<Popup/>} />
         <Route path='/signin' element={<SignUpForm/>} />
         <Route path='/vote' element={<Vote/>} />
+        <Route path='/callback' element={<Callback/>} />
+        <Route path='/ref' element={<Ref/>} />
         <Route path='/state' element={<State/>} />
         <Route path='/effect' element={<Effect/>} />
         <Route path='/recap' element={<Recap/>} />

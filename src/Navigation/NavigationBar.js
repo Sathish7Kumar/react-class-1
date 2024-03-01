@@ -30,6 +30,12 @@ const NavigationBar = () => {
             <Link to="/signin">Signin Page</Link>
           </li>
           <li>
+          <Link to="/callback">Callback</Link>
+          </li>
+          <li>
+          <Link to="/ref">Ref</Link>
+          </li>
+          <li>
           <Link to="/memo">Memo Hook</Link>
           </li>
           <li>
